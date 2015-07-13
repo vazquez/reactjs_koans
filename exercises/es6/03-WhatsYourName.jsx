@@ -78,6 +78,17 @@ class WhatsYourName extends React.Component {
     this.setState({ name: event.target.value });
   }
 
+  displayName(event) {
+    if(this.state.name.length === 0) {
+      return (
+        <p>Hey there. Enter your name.</p>
+      )
+    } else {
+      return (
+        <p>Hello {this.state.name} </p>
+      )
+    }
+  }
 
   render() {
     return (
