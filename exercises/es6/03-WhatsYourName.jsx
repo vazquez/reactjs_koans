@@ -85,7 +85,7 @@ class WhatsYourName extends React.Component {
       )
     } else {
       return (
-        <p>Hello {this.state.name} </p>
+        <p>Hello {this.state.name}</p>
       )
     }
   }
